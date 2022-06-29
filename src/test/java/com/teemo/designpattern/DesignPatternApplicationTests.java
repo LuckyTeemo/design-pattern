@@ -4,7 +4,7 @@ import com.teemo.designpattern.singleton.enums.EnumSingleton;
 import com.teemo.designpattern.singleton.hungry.HungrySingletonStaticBlock;
 import com.teemo.designpattern.singleton.hungry.HungrySingletonStaticConst;
 import com.teemo.designpattern.singleton.inner.StaticInnerSingleton;
-import com.teemo.designpattern.singleton.lazy.LazySingletonDCL;
+import com.teemo.designpattern.singleton.lazy.LazySingletonDcl;
 import com.teemo.designpattern.singleton.lazy.LazySingletonSyn;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -31,8 +31,8 @@ class DesignPatternApplicationTests {
         LazySingletonSyn sInstance1 = LazySingletonSyn.getInstance();
         System.out.println(sInstance == sInstance1);
 
-        LazySingletonDCL dInstance = LazySingletonDCL.getInstance();
-        LazySingletonDCL dInstance1 = LazySingletonDCL.getInstance();
+        LazySingletonDcl dInstance = LazySingletonDcl.getInstance();
+        LazySingletonDcl dInstance1 = LazySingletonDcl.getInstance();
         System.out.println(dInstance == dInstance1);
     }
 

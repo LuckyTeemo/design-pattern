@@ -12,6 +12,9 @@ public class EnumSingleton {
 
     enum Singleton {
 
+        /**
+         * 单例枚举
+         */
         INSTANCE;
 
         private final EnumSingleton instance;
