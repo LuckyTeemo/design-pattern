@@ -1,5 +1,9 @@
 package com.teemo.designpattern;
 
+import com.teemo.designpattern.factorymethod.Contract;
+import com.teemo.designpattern.factorymethod.ContractFactory;
+import com.teemo.designpattern.factorymethod.ContractType;
+import com.teemo.designpattern.factorymethod.PersonContractFactory;
 import com.teemo.designpattern.singleton.enums.EnumSingleton;
 import com.teemo.designpattern.singleton.hungry.HungrySingletonStaticBlock;
 import com.teemo.designpattern.singleton.hungry.HungrySingletonStaticConst;
@@ -51,5 +55,7 @@ class DesignPatternApplicationTests {
         EnumSingleton instance1 = EnumSingleton.getInstance();
         System.out.println(instance == instance1);
     }
+
+
 
 }
