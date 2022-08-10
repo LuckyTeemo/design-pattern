@@ -16,5 +16,12 @@ public class AbstractFactoryTest {
         computerDIY.setGpu(factory.createGPU());
         System.out.println(computerDIY.getCpu().getDescription());
         System.out.println(computerDIY.getGpu().getDescription());
+
+        final ComputerDIYFactory diyFactory = ComputerDIY.FactoryMaker.makeFactory(ComputerDIY.FactoryMaker.ComputerDIYManufacturer.AMD);
+        computerDIY.setCpu(diyFactory.createCPU());
+        computerDIY.setGpu(diyFactory.createGPU());
+        System.out.println(computerDIY.getCpu().getDescription());
+        System.out.println(computerDIY.getGpu().getDescription());
+
     }
 }
